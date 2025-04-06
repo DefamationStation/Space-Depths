@@ -5,12 +5,14 @@
 ### Phase 1: Project Setup (Week 1)
 
 1. **Initialize React Project**
+
    - Use Create React App or Vite for rapid setup
    - Set up TypeScript configuration
    - Configure ESLint and Prettier for code quality
    - Set up Git with sensible `.gitignore`
 
 2. **Define Project Structure**
+
    ```
    space-depths/
    ├── public/
@@ -46,6 +48,7 @@
    ```
 
 3. **Set Up State Management**
+
    - Implement Redux or useContext + useReducer pattern
    - Define core state slices:
      - Player state (health, energy, oxygen, position)
@@ -62,18 +65,21 @@
 ### Phase 2: Core Engine Components (Weeks 2-3)
 
 1. **Game Canvas Implementation**
+
    - Create canvas-based rendering system using `useRef` and HTML5 Canvas
    - Implement camera system for following player
    - Set up layers for background, entities, UI, and effects
    - Create sprite rendering system
 
 2. **Input System**
+
    - Implement keyboard and mouse controls
    - Create custom hook for input management (`useInput`)
    - Support for key rebinding and controller input
    - Implement event-based input system
 
 3. **Physics & Collision System**
+
    - Simple collision detection for entities
    - Implement spatial grid for efficient collision checks
    - Create specialized collision handlers for different entity types
@@ -90,12 +96,14 @@
 ### Phase 3: Procedural Generation (Weeks 4-5)
 
 1. **Room Generation**
+
    - Create room templates with connection points
    - Implement procedural room placement algorithm
    - Add environmental hazard generation
    - Create room type variation (corridors, chambers, airlocks)
 
 2. **Spawn System**
+
    - Algorithm for enemy placement
    - Loot distribution system based on depth level
    - Environmental object placement
@@ -108,14 +116,16 @@
 ### Phase 4: Combat System (Weeks 6-7)
 
 1. **Weapon System**
+
    - Define weapon interfaces and base classes
    - Implement different weapon types (projectile, beam, melee)
    - Create damage calculation system
    - Add visual and audio feedback
 
 2. **Enemy AI**
+
    - Create behavior tree or state machine for enemy AI
-   - Implement pathfinding (A* algorithm)
+   - Implement pathfinding (A\* algorithm)
    - Add enemy attack patterns
    - Create specialized behaviors for different enemy types
 
@@ -128,12 +138,14 @@
 ### Phase 5: Equipment & Inventory (Weeks 8-9)
 
 1. **Item System**
+
    - Create item data structure and types
    - Implement rarity and modifier system
    - Add item generation algorithms
    - Create serialization for save/load
 
 2. **Inventory Management**
+
    - Create inventory UI components
    - Implement item comparison tools
    - Add drag-and-drop functionality
@@ -148,12 +160,14 @@
 ### Phase 6: Skill System (Weeks 10-11)
 
 1. **Skill Tree Structure**
+
    - Implement skill data structure
    - Create skill tree visualization
    - Add skill point allocation system
    - Implement skill prerequisites
 
 2. **Skill Execution**
+
    - Create skill execution system
    - Implement cooldown mechanics
    - Add resource cost calculations
@@ -170,12 +184,14 @@
 ### Phase 7: Game Progression & Persistence (Weeks 12-13)
 
 1. **Save/Load System**
+
    - Implement localStorage-based save system
    - Create save file management
    - Add auto-save functionality
    - Implement save data migration for updates
 
 2. **Meta-progression**
+
    - Create permanent upgrade systems
    - Implement currency persistence
    - Add unlock mechanics for new content
@@ -190,12 +206,14 @@
 ### Phase 8: UI & Feedback Systems (Weeks 14-15)
 
 1. **HUD Components**
+
    - Create health, energy, and oxygen displays
    - Implement minimap
    - Add status effect indicators
    - Create contextual information displays
 
 2. **Menu Screens**
+
    - Implement main menu
    - Create options and settings screens
    - Add character/loadout selection
@@ -212,12 +230,14 @@
 ### Phase 9: Performance Optimization (Week 16)
 
 1. **Rendering Optimization**
+
    - Implement object pooling for projectiles and effects
    - Add occlusion culling for off-screen entities
    - Optimize sprite rendering
    - Implement texture atlases
 
 2. **State Management Optimization**
+
    - Add memoization for expensive calculations
    - Implement selective rendering with `React.memo`
    - Optimize reducer functions
@@ -232,12 +252,14 @@
 ### Phase 10: Final Polish (Weeks 17-18)
 
 1. **Audio Implementation**
+
    - Add sound effects system
    - Implement ambient audio
    - Create dynamic music system
    - Add audio mixing and volume controls
 
 2. **Visual Polish**
+
    - Add screen transitions
    - Implement particle effects
    - Create animation enhancements
@@ -254,18 +276,21 @@
 ### Code Quality Standards
 
 1. **TypeScript Usage**
+
    - Use strict mode
    - Define interfaces for all major structures
    - Use generics for reusable components
    - Maintain proper type definitions
 
 2. **Component Structure**
+
    - Follow single responsibility principle
    - Create pure components where possible
    - Use custom hooks for logic separation
    - Implement proper prop typing
 
 3. **State Management**
+
    - Normalize complex state
    - Use selectors for derived state
    - Implement immutable update patterns
@@ -280,12 +305,14 @@
 ### Testing Strategy
 
 1. **Unit Tests**
+
    - Test all utility functions
    - Test reducers and selectors
    - Test helper functions
    - Verify calculation functions
 
 2. **Component Tests**
+
    - Test UI components in isolation
    - Verify component interactions
    - Test conditional rendering
@@ -300,6 +327,7 @@
 ### Code Review Process
 
 1. **Pull Request Template**
+
    ```
    ## Description
    [Description of changes]
@@ -321,6 +349,7 @@
    ```
 
 2. **Code Review Guidelines**
+
    - Check for TypeScript type safety
    - Verify performance considerations
    - Ensure code follows project patterns
@@ -337,12 +366,14 @@
 ### Minimum Viable Product (First Playable)
 
 1. **Core Movement & Controls**
+
    - Basic player character with movement
    - Simple room generation (non-procedural)
    - Collision detection
    - Camera following
 
 2. **Basic Combat**
+
    - Simple weapons (1-2 types)
    - Basic enemies with direct movement
    - Health system
@@ -359,12 +390,14 @@ This MVP should be achievable within the first 4-6 weeks and will provide a foun
 ### Technical Considerations
 
 1. **Performance Targets**
+
    - 60 FPS on modern browsers
    - Support for mobile devices (future consideration)
    - Efficient memory usage
    - Fast loading times
 
 2. **Browser Compatibility**
+
    - Target Chrome, Firefox, Safari, Edge
    - Graceful degradation for unsupported features
    - Responsive design for different screen sizes
@@ -381,12 +414,14 @@ This MVP should be achievable within the first 4-6 weeks and will provide a foun
 ### Sprint Structure
 
 1. **Two-Week Sprints**
+
    - Sprint planning on day 1
    - Daily stand-ups (async or live)
    - Sprint review on final day
    - Retrospective after each sprint
 
 2. **Task Management**
+
    - Use GitHub Issues for task tracking
    - Implement project boards for visualization
    - Add story points for estimation
@@ -401,6 +436,7 @@ This MVP should be achievable within the first 4-6 weeks and will provide a foun
 ### Risk Management
 
 1. **Technical Risks**
+
    - Performance issues with complex game state
    - Browser compatibility challenges
    - Scaling issues with large procedural levels
@@ -417,18 +453,21 @@ This MVP should be achievable within the first 4-6 weeks and will provide a foun
 Start with these concrete steps to build a solid foundation:
 
 1. **Day 1-3: Project Setup**
+
    - Initialize React + TypeScript project
    - Set up ESLint, Prettier, and Git
    - Create basic project structure
    - Set up test framework
 
 2. **Day 4-7: Game Loop & Rendering**
+
    - Implement basic Canvas component
    - Create game loop with requestAnimationFrame
    - Set up simple sprite rendering
    - Implement basic input handling
 
 3. **Day 8-14: Entity System & Player**
+
    - Create entity component system
    - Implement player character
    - Add basic collision detection
